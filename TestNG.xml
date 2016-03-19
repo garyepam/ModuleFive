@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite guice-stage="DEVELOPMENT" name="Default suite">
+  <test verbose="2" name="pow">
+ 
+  	<parameter name="paraPowA" value ="2"></parameter>
+  	<parameter name="paraPowB" value ="2"></parameter>
+  	<parameter name="paraPowR" value ="4"></parameter>
+  	 <groups>
+		<run>
+			<include name="ModuelFive"></include>
+		</run>
+	</groups>
+  	<classes>  
+    	<class name="myPackage.NewTest"/>
+    </classes>
+  </test> 
+	
+
+</suite> 
